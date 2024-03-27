@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'raleway';
+    background-color: #f9f9f9;
+}
+.homePage {
+    background-image: url(./images/home_background.jpg);
+    background-repeat: no-repeat;
+    background-position: right 0px top -27px;
+    background-size: cover;
+}
+.callNow {
+    line-height: 5px !important;
+    font-size: 12px;
+}
+.homeHeading {
+    font-size: 60px;
+}
+.homeButton {
+    background-color: rgba(255,255,255,0.5);
+}
+.homeButton:active {
+    background-color: white;
+    color: blue;
+}
+.price{
+    transform: translate(161px, -85px);
+    box-shadow: 0px 19px 35px -10px grey;
+}
+.line {
+    background-color: #0d6efd;
+    width: 21%;
+    height: 3px;
+    transform: translateY(14px);
+}
+.cards {
+    box-shadow: 0px 0px 12px 1px grey;
+}
+.aboutPara {
+    font-size: 14px;
+    color: #c3c2c2;
+    line-height: 26px;
+}
+.cards>p {
+    color: #8b8b8b;
+    font-size: 11px;
+} 
+.cardImage {
+    background-image: url('./images/cardPhoto.png');
+    background-repeat: no-repeat;
+    border-radius: 19px;
+}
+.location {
+    font-size: 12px;
+    color: grey;
+}
+.icons {
+    border-radius: 20px;
+    border: 1px solid rgb(221, 216, 216);
+    box-shadow: 0px 0px 3px 0px rgb(189, 188, 188);
+}
+.iconsContainer {
+    border-top: 1px solid rgb(221, 216, 216);
+    border-bottom: 1px solid rgb(221, 216, 216);
+}
+
+.realEstate {
+    background-image: url('./images/realstatebackground.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.realEstateLeft {
+    background-image: url('./images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: bottom 40% right 10%;
+    
+}
+.image img {
+    width: 90px;
+}
+.date, .type{
+    font-size: 14px;
+    color: grey;
+}
+.newsDescription {
+    font-size: 15px;
+    line-height: 26px;
+}
+.footer {
+    font-size: 13px;
+    color: rgb(179, 179, 179);
+}
+
+ul li {
+    list-style-type: none;
+    line-height: 24px;
+}
+
+@media (min-width:320px) and (max-width:720px) {
+    .homePage, .realEstateLeft {
+        background-image: none;
+        text-align: center;
+    }
+    .homePage {
+        background-color: rgba(13, 109, 253);
+    }
+    .line {
+        transform: translateY(0px);
+    }
+    ul li, ul li i{
+        text-align: center;
+        align-items: center;
+    }
+}
